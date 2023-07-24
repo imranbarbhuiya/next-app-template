@@ -1,4 +1,4 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text, Anchor, TextInput } from '@mantine/core';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
@@ -18,6 +18,7 @@ export function Welcome() {
         </Anchor>
         . To get started edit index.tsx file.
       </Text>
+      <TextInput required name="name" label="Name" placeholder="Name"/>
     </>
   );
 }
